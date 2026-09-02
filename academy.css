@@ -1,0 +1,340 @@
+/* =========================================
+   BUDGET BEAUTY ACADEMY
+   ACADEMY PAGE ONLY
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f8f3ee;
+    color: #2b1b12;
+}
+
+
+/* =========================================
+   MAIN ACADEMY PAGE
+========================================= */
+
+.academy-page {
+    min-height: 100vh;
+    padding: 90px 8% 70px;
+    background: #f8f3ee;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.academy-page-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.academy-page-heading .section-label {
+    margin: 0 0 16px;
+    color: #9b4059;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.academy-page-heading h1 {
+    margin: 0 0 20px;
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 600;
+}
+
+.academy-page-heading h1 span {
+    color: #9b4059;
+}
+
+.academy-page-heading > p:last-child {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #66564e;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   COURSES GRID
+========================================= */
+
+.academy-courses {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================
+   COURSE CARD
+========================================= */
+
+.course-card {
+    position: relative;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border: 1px solid rgba(155, 64, 89, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.8);
+
+    border-color: rgba(155, 64, 89, 0.35);
+
+    box-shadow: 0 15px 35px rgba(43, 27, 18, 0.08);
+}
+
+
+/* NUMBER */
+
+.course-card span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #9b4059;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+/* COURSE TITLE */
+
+.course-card h3 {
+    margin: 0 0 12px;
+
+    color: #2b1b12;
+
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* COURSE DESCRIPTION */
+
+.course-card p {
+    margin: 0 0 22px;
+
+    max-width: 450px;
+
+    color: #66564e;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ENQUIRE LINK */
+
+.course-card a {
+    display: inline-block;
+
+    color: #9b4059;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.course-card a:hover {
+    color: #7f3047;
+}
+
+
+/* =========================================
+   BOTTOM ENQUIRY
+========================================= */
+
+.academy-enquiry {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 55px auto 0;
+
+    padding: 38px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(43, 27, 18, 0.12);
+}
+
+
+.academy-enquiry h2 {
+    margin: 0 0 12px;
+
+    color: #2b1b12;
+
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.academy-enquiry p {
+    margin: 0 0 24px;
+
+    color: #66564e;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.academy-enquiry a {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #9b4059;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.academy-enquiry a:hover {
+    background: #7f3047;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .academy-page {
+        padding: 70px 20px 50px;
+    }
+
+
+    .academy-page-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .academy-page-heading .section-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+
+    .academy-page-heading h1 {
+        font-size: 38px;
+    }
+
+
+    .academy-page-heading > p:last-child {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    .academy-courses {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .course-card {
+        padding: 24px;
+    }
+
+
+    .course-card h3 {
+        font-size: 21px;
+    }
+
+
+    .academy-enquiry {
+        margin-top: 40px;
+        padding: 30px 10px;
+    }
+
+
+    .academy-enquiry h2 {
+        font-size: 24px;
+    }
+
+}
+/* =========================================
+   BACK TO MAIN WEBSITE
+========================================= */
+
+.academy-back {
+    display: inline-block;
+
+    margin-bottom: 55px;
+    margin-left: 5px;
+
+    color: #9b4059;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.academy-back:hover {
+    color: #7f3047;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .academy-back {
+        margin-bottom: 40px;
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+}

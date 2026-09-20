@@ -34,31 +34,35 @@
 
         <ul class="nav-links" id="navLinks">
 
-            <li><a href="#home">Home</a></li>
+    <li><a href="#home">Home</a></li>
 
-            <li><a href="#about">About</a></li>
+    <li><a href="#about">About</a></li>
 
-            <li><a href="#services">Services</a></li>
+    <li><a href="#services">Services</a></li>
 
-            <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#gallery">Gallery</a></li>
 
-            <li><a href="#academy">Academy</a></li>
+    <li><a href="#reviewsSlider">Reviews</a></li>
 
-            <li><a href="#contact">Contact</a></li>
+    <li><a href="#why-choose">Why Choose Us</a></li>
 
-            <li class="mobile-book">
-                <a href="#contact">
-                    Book Appointment
-                </a>
-            </li>
+    <li><a href="#academy">Academy</a></li>
 
-        </ul>
+    <li><a href="#contact">Contact</a></li>
+
+    <li class="mobile-book">
+    <a href="#appointmentForm">
+        Book Appointment
+    </a>
+</li>
+
+</ul>
 
         <!-- Desktop Button -->
 
-        <a href="#contact" class="nav-button desktop-book">
-            Book Appointment
-        </a>
+       <a href="#appointmentForm" class="nav-button desktop-book">
+    Book Appointment
+</a>
 
     </nav>
 
@@ -107,9 +111,9 @@
 
             <div class="hero-buttons">
 
-                <a href="#contact" class="primary-button">
-                    Book an Appointment
-                </a>
+                <a href="#appointmentForm" class="primary-button">
+    Book an Appointment
+</a>
 
                 <a href="#services" class="secondary-button">
                     Explore Services
@@ -250,7 +254,239 @@
     </div>
 
 </section>
+<!-- =========================
+     BRIDAL SPECIAL BOOKING
+========================= -->
+<section class="bridal-booking-section" id="bridal">
 
+  <div class="bridal-overlay">
+
+    <div class="bridal-heading">
+      <span>BRIDAL SPECIAL</span>
+
+      <h2>Special Booking for Brides</h2>
+
+      <p class="bridal-note">
+        <strong>Important Note:</strong>
+        Please select and book any one of the three bridal makeup
+        packages to continue your bridal booking.
+      </p>
+    </div>
+
+    <div class="bridal-packages">
+
+      <!-- 01 Complete BB Lush -->
+      <div class="bridal-package">
+        <h3>Complete BB Lush</h3>
+
+        <p>
+          A beautiful bridal makeup look designed for your special day.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('Complete BB Lush')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 02 Air Brush -->
+      <div class="bridal-package">
+        <h3>Air Brush</h3>
+
+        <p>
+          A smooth and flawless airbrush bridal makeup experience.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('Air Brush')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 03 HD Makeup -->
+      <div class="bridal-package">
+        <h3>HD Makeup</h3>
+
+        <p>
+          A refined HD makeup look for a flawless bridal appearance.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('HD Makeup')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 04 Groom -->
+      <div class="bridal-package">
+        <h3>Groom</h3>
+
+        <p>
+          Professional grooming and makeup for the groom.
+        </p>
+      </div>
+
+
+      <!-- 05 Bridesmaid -->
+      <div class="bridal-package">
+        <h3>Bridesmaid</h3>
+
+        <p>
+          Elegant makeup styling for bridesmaids and special guests.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+     BRIDAL BOOKING FORM
+========================= -->
+<div class="bridal-form-overlay" id="bridalForm">
+
+  <div class="bridal-form-box">
+
+    <button type="button" class="close-form" onclick="closeBridalForm()">
+      ×
+    </button>
+
+    <span class="form-label">BRIDAL BOOKING</span>
+
+    <h2>Book Your Bridal Makeup</h2>
+
+    <p>
+      Please fill in your details to continue your booking.
+    </p>
+
+    <form id="bridalBookingForm">
+
+      <!-- Makeup Package -->
+      <label for="makeupPackage">Makeup Package</label>
+
+      <select id="makeupPackage" name="makeupPackage" required>
+        <option value="Complete BB Lush">Complete BB Lush</option>
+        <option value="Air Brush">Air Brush</option>
+        <option value="HD Makeup">HD Makeup</option>
+      </select>
+
+
+      <!-- Bride Name -->
+      <label for="brideName">Bride Name</label>
+
+      <input
+        type="text"
+        id="brideName"
+        name="brideName"
+        placeholder="Enter your name"
+        required
+      />
+
+
+      <!-- Phone -->
+      <label for="bridePhone">Phone Number</label>
+
+      <input
+        type="tel"
+        id="bridePhone"
+        name="bridePhone"
+        placeholder="Enter your phone number"
+        required
+      />
+
+
+      <!-- Additional Services -->
+      <label>Additional Services <span>(Optional)</span></label>
+
+      <div class="additional-services">
+
+        <label>
+          <input
+            type="checkbox"
+            name="additionalService"
+            value="Groom Makeup"
+          />
+          Groom Makeup
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="additionalService"
+            value="Bridesmaid"
+          />
+          Bridesmaid
+        </label>
+
+      </div>
+
+
+      <!-- Function Venue -->
+      <label for="functionVenue">Function Venue</label>
+
+      <input
+        type="text"
+        id="functionVenue"
+        name="functionVenue"
+        placeholder="Enter function venue"
+        required
+      />
+
+
+      <!-- Full Address -->
+      <label for="functionAddress">Full Address</label>
+
+      <textarea
+        id="functionAddress"
+        name="functionAddress"
+        rows="3"
+        placeholder="Enter complete venue address in Trichy"
+        required
+      ></textarea>
+
+
+      <!-- Date -->
+      <label for="bookingDate">Booking Date</label>
+
+      <input
+        type="date"
+        id="bookingDate"
+        name="bookingDate"
+        required
+      />
+
+
+      <!-- Time -->
+      <label for="bookingTime">Preferred Time</label>
+
+      <input
+        type="time"
+        id="bookingTime"
+        name="bookingTime"
+        required
+      />
+
+
+      <!-- Submit -->
+      <button type="submit" class="booking-submit-btn">
+        Book Appointment
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
 
             <!-- =========================
      SERVICES
@@ -325,18 +561,19 @@
 </button>
         </div>
 
-        <!-- BRIDAL -->
-        <div class="service-card featured-service">
-            <span class="service-number">05</span>
-            <h3>Bridal</h3>
-            <p>
-                Elegant bridal makeup, hairstyling and
-                complete bridal beauty services.
-            </p>
-            <button onclick="openService('bridal')">
-    Explore Services →
-</button>
-        </div>
+        <!-- LIP -->
+<div class="service-card featured-service">
+    <span class="service-number">05</span>
+    <h3>Lip</h3>
+    <p>
+        Professional lip pigmentation and lip
+        enhancement treatments for a beautiful finish.
+    </p>
+    <button onclick="openService('lip')">
+        Explore Services →
+    </button>
+</div>
+        
 
         <!-- BROWS & LASHES -->
         <div class="service-card">
@@ -350,31 +587,135 @@
     Explore Services →
 </button>
         </div>
+<!-- TATTOO -->
+<div class="service-card">
+    <span class="service-number">07</span>
+    <h3>Tattoo</h3>
+    <p>
+        Creative and professional tattoo designs
+        crafted with precision and care.
+    </p>
+    <button onclick="openService('tattoo')">
+        Explore Services →
+    </button>
+</div>
 
-        <!-- BODY CARE -->
-        <div class="service-card">
-            <span class="service-number">07</span>
-            <h3>Body Care</h3>
-            <p>
-                Waxing, threading, massage and relaxing
-                spa services.
-            </p>
-            <button onclick="openService('body')">
-    Explore Services →
-</button>
+        <!-- PRODUCTS -->
+<div class="service-card">
+    <span class="service-number">08</span>
+    <h3>Products</h3>
+    <p>
+        Carefully selected beauty products for
+        professional care and everyday beauty.
+    </p>
+    <button onclick="openService('products')">
+        Explore Products →
+    </button>
+</div>
+    </div>
+
+</section>
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why-choose-section" id="why-choose">
+
+    <div class="why-choose-header">
+        <p class="section-label">WHY CHOOSE US</p>
+
+        <h2>
+            Beauty crafted with
+            <span>experience & perfection.</span>
+        </h2>
+
+        <p class="why-choose-intro">
+            Experience the art of beautiful bridal transformations,
+            created with care, precision and a passion for beauty.
+        </p>
+    </div>
+
+
+    <!-- MAIN FEATURES -->
+    <div class="why-main-features">
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>5+ years of bridal expertise</p>
         </div>
 
-        <!-- MEHENDI -->
-        <div class="service-card">
-            <span class="service-number">08</span>
-            <h3>Mehendi</h3>
-            <p>
-                Beautiful mehendi designs for weddings,
-                celebrations and special moments.
-            </p>
-            <button onclick="openService('mehendi')">
-    Explore Services →
-</button>
+        <div class="why-feature">
+            <span>✓</span>
+            <p>1000+ satisfied clients</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Premium international products</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Natural, flawless finishing</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Client-friendly services</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Reputation as Trichy's No.1 bridal studio</p>
+        </div>
+
+    </div>
+
+
+    <!-- IMAGE + HIGHLIGHTS -->
+    <div class="why-choose-content">
+
+        <div class="why-choose-image">
+            <img src="review3.jpg.png" alt="Budget Beauty Bridal">
+        </div>
+
+        <div class="why-highlights">
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Flawless Look</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Luxury Service</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Premium Products</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Professional Team</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Bridal Glow Guaranteed</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Timely Perfection</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>HD Photography Ready</h3>
+            </div>
+
         </div>
 
     </div>
@@ -581,44 +922,226 @@
             Beauty. Style. Confidence.
         </p>
 
-        <a
-            href="#contact"
-            class="primary-button"
-        >
-            Book Your Appointment
-        </a>
+       <a
+    href="#appointmentForm"
+    class="primary-button"
+>
+    Book Your Appointment
+</a>
 
     </div>
 
 </section>
+<!-- =========================
+     REVIEWS SLIDER
+========================= -->
+
+<div class="reviews-slider" id="reviewsSlider">
+
+    <div class="reviews-track" id="reviewsTrack">
+
+        <!-- REVIEW 1 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review1.jpg.png" alt="Budget Beauty Client Review 1">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “Absolutely loved my experience at Budget Beauty!
+                    The service was professional, friendly and beautifully
+                    done. I felt confident and truly special.”
+                </p>
+
+                <h3>Happy Client</h3>
+                <span>Beauty Service</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 2 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review2.jpg.png" alt="Budget Beauty Client Review 2">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “Such a wonderful beauty experience. The styling
+                    and finishing were perfect, and the team understood
+                    exactly what I wanted. Highly recommended!”
+                </p>
+
+                <h3>Beautiful Client</h3>
+                <span>Hair &amp; Styling</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 3 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review3.jpg.png" alt="Budget Beauty Bridal Review">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “I absolutely loved my bridal beauty experience.
+                    Everything was handled with care and the final look
+                    was elegant, beautiful and exactly what I wanted.”
+                </p>
+
+                <h3>Happy Bride</h3>
+                <span>Bridal Makeup</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 4 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review4.jpg.png" alt="Budget Beauty Client Review 4">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “Amazing service from start to finish. Everything
+                    was done with great attention to detail. The final
+                    look was natural, elegant and beautiful.”
+                </p>
+
+                <h3>Satisfied Client</h3>
+                <span>Beauty Service</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 5 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review5.jpg.png" alt="Budget Beauty Client Review 5">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “I had such a lovely experience at Budget Beauty.
+                    The styling was done with so much care and the final
+                    look was beautiful. I received so many compliments!”
+                </p>
+
+                <h3>Gorgeous Client</h3>
+                <span>Hair Styling</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 6 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review6.jpg.png" alt="Budget Beauty Client Review 6">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “Budget Beauty made me feel so special. The styling
+                    was elegant and the entire experience was relaxing,
+                    comfortable and enjoyable.”
+                </p>
+
+                <h3>Happy Client</h3>
+                <span>Beauty &amp; Styling</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 7 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review7.jpg.png" alt="Budget Beauty Client Review 7">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “Excellent service and a very professional team.
+                    They understood my preferences and created a look
+                    that suited me perfectly. Definitely recommended!”
+                </p>
+
+                <h3>Satisfied Client</h3>
+                <span>Beauty Service</span>
+            </div>
+        </div>
+
+
+        <!-- REVIEW 8 -->
+        <div class="review-card">
+            <div class="review-image">
+                <img src="review8.jpg.png" alt="Budget Beauty Client Review 8">
+            </div>
+
+            <div class="review-content">
+                <div class="review-stars">★ ★ ★ ★ ★</div>
+
+                <p class="review-text">
+                    “I am so happy with my beauty transformation.
+                    The finishing was neat, elegant and beautiful.
+                    I would definitely love to visit Budget Beauty again.”
+                </p>
+
+                <h3>Beautiful Client</h3>
+                <span>Beauty Transformation</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 <!-- =========================
      ACADEMY SECTION
 ========================= -->
 
 <section id="academy" class="academy-section">
 
-    <div class="academy-heading">
+  <div class="academy-logo">
+    <img src="academyback.jpg" alt="Budget Beauty Academy">
+  </div>
 
-        <p class="section-label">
-            BUDGET BEAUTY ACADEMY
-        </p>
+  <div class="academy-heading">
+    <p class="section-label">
+      BUDGET BEAUTY ACADEMY
+    </p>
 
-        <h2>
-            Learn beauty.<br>
-            <span>Build your future.</span>
-        </h2>
+    <h2>
+      Learn beauty.<br>
+      <span>Build your future.</span>
+    </h2>
 
-        <p>
-            Turn your passion for beauty into professional skills.
-            Learn practical techniques, build confidence and
-            take your first step towards a career in beauty.
-        </p>
+    <p>
+      Turn your passion for beauty into professional skills.
+      Explore our academy courses, practical training and
+      career-focused beauty programs.
+    </p>
 
-        <a href="academy.html" class="academy-button">
-            View Academy Courses →
-        </a>
+    <a href="academy.html" class="academy-button">
+      Enquire About Our Academy Courses →
+    </a>
 
-    </div>
+  </div>
 
 </section>
 
@@ -680,7 +1203,7 @@
                 </p>
 
                 <a
-                    href="https://share.google/PkrQwHIXFpvyzS8ei"
+                    href=https://www.instagram.com/trichy_makeup_artist_anvikaa/
                     target="_blank"
                     rel="noopener noreferrer"
                     class="social-button"
@@ -837,7 +1360,7 @@
                 <span>PHONE</span>
 
                 <a href="tel:+919150979121">
-                    +91 91509 79121
+                    +91 96551 27798
                 </a>
 
             </div>
@@ -848,7 +1371,7 @@
                 <span>WHATSAPP</span>
 
                 <a
-                    href="https://wa.me/919150979121"
+                    href="https://wa.me/919655127798"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -907,9 +1430,10 @@
             </h3>
 
 
-            <form
-                onsubmit="sendAppointmentToWhatsApp(event)"
-            >
+           <form
+    id="appointmentForm"
+    onsubmit="sendAppointmentToWhatsApp(event)"
+>
 
                 <!-- NAME -->
 
@@ -1023,11 +1547,11 @@
 
 
                 <button
-                    type="submit"
-                    class="contact-submit-button"
-                >
-                    Book Appointment →
-                </button>
+    type="submit"
+    class="contact-submit-button"
+>
+    Book Appointment →
+</button>
                 <script>
 
 function sendAppointmentToWhatsApp(event) {
@@ -1055,7 +1579,7 @@ function sendAppointmentToWhatsApp(event) {
         "Message: " + encodeURIComponent(message);
 
     const whatsappURL =
-        "https://wa.me/919150979121?text=" + text;
+        "https://wa.me/+919655127798?text=" + text;
 
     window.open(whatsappURL, "_blank");
 
@@ -1207,63 +1731,61 @@ const serviceData = {
         ]
     },
 
-    bridal: {
-        title: "Bridal",
-        image: "bridal.jpg.jpg",
-        description:
-        "Elegant bridal beauty services designed to make your most special day unforgettable.",
-        services: [
-            "Bridal Makeup",
-            "Bridal Hairstyling",
-            "Bridal Hair",
-            "Reception Makeup",
-            "Bridal Beauty Services",
-            "Bridal Packages"
-        ]
-    },
+   lip: {
+    title: "Lip",
+    image: "lip.jpg",
+    description:
+    "Professional lip pigmentation treatments designed to enhance lip colour and create a beautiful, natural-looking finish.",
+    services: [
+        "Single Sitting – Color Correction",
+        "Color Infusion – Second Sitting"
+    ]
+},
 
     brows: {
-        title: "Brows & Lashes",
-        image: "brows.jpg.jpg",
-        description:
-        "Beautiful brow and lash services that add definition and elegance to your look.",
-        services: [
-            "Eyebrow Shaping",
-            "Eyebrow Beautification",
-            "Eyelashes",
-            "Eyelash Extensions",
-            "Microblading"
-        ]
-    },
+    title: "Eyelashes",
+    image: "brows.jpg.jpg",
+    description:
+    "Professional eyelash extensions designed to enhance your natural beauty.",
+    services: [
+        "Classic – ₹2,000",
+        "Hybrid – ₹3,500"
+    ]
+},
+tattoo: {
+    title: "Tattoo",
+    image: "tatto.jpg",
+    description:
+    "Creative and professional tattoo services designed with precision, care and attention to detail.",
+    services: [
+        "Name Tattoo",
+        "Design Tattoo",
+        "Portrait Tattoo"
+    ]
+},
 
-    body: {
-        title: "Body Care",
-        image: "bodycare.jpg.jpg",
-        description:
-        "Personal care services designed to leave you feeling fresh, relaxed and confident.",
-        services: [
-            "Waxing",
-            "Body Waxing",
-            "Threading",
-            "Spa Services"
-        ]
-    },
-
-    mehendi: {
-        title: "Mehendi",
-        image: "mehandi.jpg.jpg",
-        description:
-        "Beautiful mehendi designs created for weddings, celebrations and special occasions.",
-        services: [
-            "Bridal Mehendi",
-            "Traditional Mehendi",
-            "Special Occasion Mehendi"
-        ]
-    }
-
+   products: {
+    title: "Celebrity Secret",
+    image: "product.jpg",
+    description:
+    "Explore Celebrity Secret hair and skincare products designed for everyday beauty care.",
+    services: [
+        "Hair Growth Serum – 30 ml – ₹375",
+        "Rosemary Shampoo – 100 ml – ₹275",
+        "Hair Smoothening Conditioner – 50 ml – ₹175",
+        "Hair Henna Black – 50 gm – ₹100",
+        "Scalp Hair Growth Spray – 50 ml – ₹250",
+        "Glow Face Wash – 100 ml – ₹175",
+        "Brightening Face Serum – 30 ml – ₹375",
+        "Day Cream – 25 gm – ₹250",
+        "Avocado Night Cream – 30 ml – ₹699",
+        "Sunscreen 50++ – 50 gm – ₹275",
+        "Herbal Weekly Face Mask – 30 gm – ₹180",
+        "Hydration Moisturizer – 50 gm – ₹169",
+        "Kojic Glow Soap – 100 gm – ₹99"
+    ]
+}
 };
-
-
 /* ===================================
    OPEN SERVICE
 =================================== */
@@ -1381,7 +1903,7 @@ function bookSpecificService(
 
 
     const whatsappURL =
-        "https://wa.me/919150979121?text=" +
+        "https://wa.me/+919655127798?text=" +
         message;
 
 
@@ -1413,7 +1935,7 @@ function bookOnWhatsApp() {
 
 
     const whatsappURL =
-        "https://wa.me/919150979121?text=" +
+        "https://wa.me/+919655127798?text=" +
         message;
 
 
@@ -1469,7 +1991,7 @@ document.querySelectorAll(".academy-card").forEach(function(card) {
             "I would like to know more about this course.";
 
         const whatsappURL =
-            "https://wa.me/919150979121?text=" +
+            "https://wa.me/+919655127798?text=" +
             message;
 
         window.open(
@@ -1525,8 +2047,557 @@ if (menuToggle && navLinks) {
     });
 
 }
-
 </script>
+<script>
+const reviewsSlider = document.getElementById("reviewsSlider");
+const reviewsTrack = document.getElementById("reviewsTrack");
 
+if (reviewsSlider && reviewsTrack) {
+
+    const originalCards = Array.from(
+        reviewsTrack.querySelectorAll(".review-card")
+    );
+
+    const totalReviews = originalCards.length;
+
+    if (totalReviews > 0) {
+
+        /* =========================
+           CREATE 3 GROUPS
+        ========================= */
+
+        const group1 = originalCards.map(card => card.cloneNode(true));
+        const group2 = originalCards.map(card => card.cloneNode(true));
+        const group3 = originalCards.map(card => card.cloneNode(true));
+
+        reviewsTrack.innerHTML = "";
+
+        [...group1, ...group2, ...group3].forEach(card => {
+            reviewsTrack.appendChild(card);
+        });
+
+
+        let currentIndex = totalReviews;
+
+        let autoSlideTimer = null;
+
+        let isDragging = false;
+
+        let startX = 0;
+
+        let dragDistance = 0;
+
+
+        /* =========================
+           SET CARD WIDTH
+        ========================= */
+
+        function setReviewSizes() {
+
+            const sliderWidth =
+                reviewsSlider.clientWidth;
+
+            const allCards =
+                reviewsTrack.querySelectorAll(".review-card");
+
+            allCards.forEach(card => {
+
+                card.style.flex =
+                    `0 0 ${sliderWidth}px`;
+
+                card.style.width =
+                    `${sliderWidth}px`;
+
+                card.style.minWidth =
+                    `${sliderWidth}px`;
+
+                card.style.maxWidth =
+                    `${sliderWidth}px`;
+
+                card.style.boxSizing =
+                    "border-box";
+            });
+
+            /*
+               24 cards × slider width
+            */
+
+            reviewsTrack.style.width =
+                `${sliderWidth * totalReviews * 3}px`;
+        }
+
+
+        /* =========================
+           MOVE
+        ========================= */
+
+        function moveReview(index, animate = true) {
+
+            const sliderWidth =
+                reviewsSlider.clientWidth;
+
+            reviewsTrack.style.transition =
+                animate
+                    ? "transform 0.65s ease"
+                    : "none";
+
+            reviewsTrack.style.transform =
+                `translate3d(
+                    ${-(index * sliderWidth)}px,
+                    0,
+                    0
+                )`;
+        }
+
+
+        /* =========================
+           NEXT
+        ========================= */
+
+        function nextReview() {
+
+            if (isDragging) return;
+
+            currentIndex++;
+
+            moveReview(currentIndex, true);
+        }
+
+
+        /* =========================
+           PREVIOUS
+        ========================= */
+
+        function previousReview() {
+
+            if (isDragging) return;
+
+            currentIndex--;
+
+            moveReview(currentIndex, true);
+        }
+
+
+        /* =========================
+           LOOP
+        ========================= */
+
+        reviewsTrack.addEventListener(
+            "transitionend",
+            function () {
+
+                if (currentIndex >= totalReviews * 2) {
+
+                    currentIndex -= totalReviews;
+
+                    moveReview(currentIndex, false);
+                }
+
+                else if (currentIndex < totalReviews) {
+
+                    currentIndex += totalReviews;
+
+                    moveReview(currentIndex, false);
+                }
+            }
+        );
+
+
+        /* =========================
+           AUTO SLIDE
+        ========================= */
+
+        function startAutoSlide() {
+
+            stopAutoSlide();
+
+            autoSlideTimer = setInterval(
+                nextReview,
+                5000
+            );
+        }
+
+
+        function stopAutoSlide() {
+
+            if (autoSlideTimer) {
+
+                clearInterval(autoSlideTimer);
+
+                autoSlideTimer = null;
+            }
+        }
+
+
+        /* =========================
+           MOUSE
+        ========================= */
+
+        reviewsSlider.addEventListener(
+            "mousedown",
+            function (event) {
+
+                isDragging = true;
+
+                startX = event.clientX;
+
+                dragDistance = 0;
+
+                stopAutoSlide();
+
+                reviewsTrack.style.transition =
+                    "none";
+
+                reviewsSlider.style.cursor =
+                    "grabbing";
+            }
+        );
+
+
+        document.addEventListener(
+            "mousemove",
+            function (event) {
+
+                if (!isDragging) return;
+
+                dragDistance =
+                    event.clientX - startX;
+
+                const sliderWidth =
+                    reviewsSlider.clientWidth;
+
+                reviewsTrack.style.transform =
+                    `translate3d(
+                        ${(-currentIndex * sliderWidth)
+                        + dragDistance}px,
+                        0,
+                        0
+                    )`;
+            }
+        );
+
+
+        document.addEventListener(
+            "mouseup",
+            function () {
+
+                if (!isDragging) return;
+
+                isDragging = false;
+
+                reviewsSlider.style.cursor =
+                    "grab";
+
+                const limit =
+                    reviewsSlider.clientWidth * 0.15;
+
+
+                if (dragDistance < -limit) {
+
+                    currentIndex++;
+
+                } else if (dragDistance > limit) {
+
+                    currentIndex--;
+
+                }
+
+
+                moveReview(currentIndex, true);
+
+                startAutoSlide();
+            }
+        );
+
+
+        /* =========================
+           TOUCH
+        ========================= */
+
+        reviewsSlider.addEventListener(
+            "touchstart",
+            function (event) {
+
+                isDragging = true;
+
+                startX =
+                    event.touches[0].clientX;
+
+                dragDistance = 0;
+
+                stopAutoSlide();
+
+                reviewsTrack.style.transition =
+                    "none";
+            },
+            { passive: true }
+        );
+
+
+        reviewsSlider.addEventListener(
+            "touchmove",
+            function (event) {
+
+                if (!isDragging) return;
+
+                dragDistance =
+                    event.touches[0].clientX - startX;
+
+                const sliderWidth =
+                    reviewsSlider.clientWidth;
+
+                reviewsTrack.style.transform =
+                    `translate3d(
+                        ${(-currentIndex * sliderWidth)
+                        + dragDistance}px,
+                        0,
+                        0
+                    )`;
+            },
+            { passive: true }
+        );
+
+
+        reviewsSlider.addEventListener(
+            "touchend",
+            function () {
+
+                if (!isDragging) return;
+
+                isDragging = false;
+
+                const limit =
+                    reviewsSlider.clientWidth * 0.15;
+
+
+                if (dragDistance < -limit) {
+
+                    currentIndex++;
+
+                } else if (dragDistance > limit) {
+
+                    currentIndex--;
+
+                }
+
+
+                moveReview(currentIndex, true);
+
+                startAutoSlide();
+            }
+        );
+
+
+        /* =========================
+           RESIZE
+        ========================= */
+
+        window.addEventListener(
+            "resize",
+            function () {
+
+                setReviewSizes();
+
+                moveReview(
+                    currentIndex,
+                    false
+                );
+            }
+        );
+
+
+        /* =========================
+           START
+        ========================= */
+
+        function initializeReviews() {
+
+            setReviewSizes();
+
+            moveReview(
+                currentIndex,
+                false
+            );
+
+            reviewsSlider.style.cursor =
+                "grab";
+
+            startAutoSlide();
+        }
+
+
+        if (document.readyState === "complete") {
+
+            initializeReviews();
+
+        } else {
+
+            window.addEventListener(
+                "load",
+                initializeReviews
+            );
+        }
+
+    }
+}
+</script>
+<script>
+/* =========================
+   BRIDAL BOOKING FORM
+========================= */
+
+function openBridalForm(packageName) {
+  const bridalForm = document.getElementById("bridalForm");
+  const makeupPackage = document.getElementById("makeupPackage");
+
+  if (!bridalForm || !makeupPackage) return;
+
+  // Open popup
+  bridalForm.classList.add("active");
+
+  // Automatically select the package
+  makeupPackage.value = packageName;
+
+  // Prevent background scrolling
+  document.body.classList.add("overlay-open");
+}
+
+
+function closeBridalForm() {
+  const bridalForm = document.getElementById("bridalForm");
+
+  if (!bridalForm) return;
+
+  // Close popup
+  bridalForm.classList.remove("active");
+
+  // Allow background scrolling
+  document.body.classList.remove("overlay-open");
+}
+
+
+/* =========================
+   BRIDAL BOOKING → WHATSAPP
+========================= */
+
+const bridalBookingForm = document.getElementById("bridalBookingForm");
+
+if (bridalBookingForm) {
+
+  bridalBookingForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const packageName =
+      document.getElementById("makeupPackage").value;
+
+    const brideName =
+      document.getElementById("brideName").value.trim();
+
+    const bridePhone =
+      document.getElementById("bridePhone").value.trim();
+
+    const functionVenue =
+      document.getElementById("functionVenue").value.trim();
+
+    const functionAddress =
+      document.getElementById("functionAddress").value.trim();
+
+    const bookingDate =
+      document.getElementById("bookingDate").value;
+
+    const bookingTime =
+      document.getElementById("bookingTime").value;
+
+
+    // Additional services
+    const additionalServices = [];
+
+    document
+      .querySelectorAll('input[name="additionalService"]:checked')
+      .forEach(function(service) {
+        additionalServices.push(service.value);
+      });
+
+    const additionalServiceText =
+      additionalServices.length > 0
+        ? additionalServices.join(", ")
+        : "None";
+
+
+    // WhatsApp message
+    const message =
+`💄 *BRIDAL BOOKING ENQUIRY*
+
+*Makeup Package:* ${packageName}
+
+*Bride Name:* ${brideName}
+
+*Phone Number:* ${bridePhone}
+
+*Additional Services:* ${additionalServiceText}
+
+*Function Venue:* ${functionVenue}
+
+*Full Address:* ${functionAddress}
+
+*Booking Date:* ${bookingDate}
+
+*Preferred Time:* ${bookingTime}
+
+I would like to book this bridal makeup package. Please confirm the availability.`;
+
+
+    // Budget Beauty WhatsApp number
+    const whatsappNumber = "+919655127798";
+
+    const whatsappURL =
+      "https://wa.me/" +
+      whatsappNumber +
+      "?text=" +
+      encodeURIComponent(message);
+
+
+    // Open WhatsApp
+    window.open(whatsappURL, "_blank");
+
+  });
+
+}
+
+
+/* =========================
+   CLOSE BRIDAL FORM
+   WHEN CLICKING OUTSIDE
+========================= */
+
+const bridalFormOverlay =
+  document.getElementById("bridalForm");
+
+if (bridalFormOverlay) {
+
+  bridalFormOverlay.addEventListener("click", function(event) {
+
+    if (event.target === bridalFormOverlay) {
+      closeBridalForm();
+    }
+
+  });
+
+}
+
+
+/* =========================
+   ESC KEY → CLOSE FORM
+========================= */
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "Escape") {
+    closeBridalForm();
+  }
+
+});
+</script>
 </body>
 </html>

@@ -20,9 +20,14 @@
 
     <nav class="navbar">
 
+
         <a href="#home" class="mobile-brand">
             Budget Beauty
         </a>
+<a href="academy.html" class="courses-promo mobile-courses-promo">
+    BEAUTY COURSES AVAILABLE
+    <span>Explore Now ↓</span>
+</a>
 
         <!-- Hamburger -->
 
@@ -30,39 +35,32 @@
             ☰
         </button>
 
-        <!-- Navigation -->
-
-        <ul class="nav-links" id="navLinks">
-
+        
+<!-- Navigation -->
+<ul class="nav-links" id="navLinks">
     <li><a href="#home">Home</a></li>
-
     <li><a href="#about">About</a></li>
-
+    <li><a href="#reviews">Reviews</a></li>
     <li><a href="#services">Services</a></li>
-
     <li><a href="#gallery">Gallery</a></li>
-
-    <li><a href="#reviewsSlider">Reviews</a></li>
-
-    <li><a href="#why-choose">Why Choose Us</a></li>
-
-    <li><a href="#academy">Academy</a></li>
-
     <li><a href="#contact">Contact</a></li>
-
-    <li class="mobile-book">
-    <a href="#appointmentForm">
-        Book Appointment
-    </a>
+    <li><a href="#social">Social Media</a></li>
+    
+       
+<li>
+    <a href="#academy">Academy</a>
 </li>
 
 </ul>
+
 
         <!-- Desktop Button -->
 
        <a href="#appointmentForm" class="nav-button desktop-book">
     Book Appointment
 </a>
+
+
 
     </nav>
 
@@ -725,218 +723,649 @@
 
 
 
-    <!-- =========================
-     GALLERY
-========================= -->
+   <!-- =========================================
+     BUDGET BEAUTY GALLERY
+========================================= -->
 
 <section id="gallery" class="gallery-section">
+
+    <!-- GALLERY HEADER -->
 
     <div class="gallery-header">
 
         <p class="section-label">
-              OUR GALLERY
+            OUR GALLERY
         </p>
 
         <h2>
-            A glimpse of our
-            <span>beauty experience.</span>
+            Explore our
+            <span>beauty world.</span>
         </h2>
 
         <p>
             Explore our beauty, styling and bridal work.
-            Every look is created with care, elegance and attention to detail.
+            Choose a service to view our collection.
         </p>
 
     </div>
 
 
-    <!-- GALLERY GRID -->
+    <!-- =========================================
+         SERVICE CATEGORY CARDS
+    ========================================= -->
 
-    <div class="gallery-grid">
+    <div class="gallery-category-grid">
 
 
-        <!-- Gallery 1 -->
+        <!-- 01 HAIR -->
 
-        <div class="gallery-item gallery-large">
+        <div class="gallery-category-card">
 
             <img
-                src="gallery1.jpg.jpeg"
-                alt="Budget Beauty Hair Styling"
+                src="gallery1011.jpg"
+                alt="Budget Beauty Hair Services"
             >
 
-            <div class="gallery-overlay">
+            <div class="gallery-card-overlay">
 
-                <span>01</span>
+                <div class="gallery-card-content">
 
-                <h3>
-                    Hair Styling
-                </h3>
+                    <span class="gallery-number">
+                        01
+                    </span>
 
-                <p>
-                    Beautiful styles created for every occasion.
-                </p>
+                    <h3>
+                        HAIR
+                    </h3>
+
+                    <p>
+                        Hair Beauty Collection
+                    </p>
+
+                    <button
+                        type="button"
+                        onclick="openGalleryCategory('hair')"
+                    >
+                        View All →
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <!-- Gallery 2 -->
+        <!-- 02 MAKEUP -->
 
-        <div class="gallery-item">
+        <div class="gallery-category-card">
 
             <img
                 src="gallery2.jpg.jpeg"
                 alt="Budget Beauty Makeup"
             >
 
-            <div class="gallery-overlay">
+            <div class="gallery-card-overlay">
 
-                <span>02</span>
+                <div class="gallery-card-content">
 
-                <h3>
-                    Makeup
-                </h3>
+                    <span class="gallery-number">
+                        02
+                    </span>
 
-                <p>
-                    Elegant makeup looks for special moments.
-                </p>
+                    <h3>
+                        MAKEUP
+                    </h3>
+
+                    <p>
+                        Makeup Beauty Collection
+                    </p>
+
+                    <button
+                        type="button"
+                        onclick="openGalleryCategory('makeup')"
+                    >
+                        View All →
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <!-- Gallery 3 -->
+        <!-- 03 BRIDAL -->
 
-        <div class="gallery-item">
+        <div class="gallery-category-card">
 
             <img
                 src="gallery3.jpg.jpeg"
-                alt="Budget Beauty Bridal Makeup"
+                alt="Budget Beauty Bridal"
             >
 
-            <div class="gallery-overlay">
+            <div class="gallery-card-overlay">
 
-                <span>03</span>
+                <div class="gallery-card-content">
 
-                <h3>
-                    Bridal Beauty
-                </h3>
+                    <span class="gallery-number">
+                        03
+                    </span>
 
-                <p>
-                    Complete bridal beauty and styling.
-                </p>
+                    <h3>
+                        BRIDAL
+                    </h3>
+
+                    <p>
+                        Bridal Beauty Collection
+                    </p>
+
+                    <button
+                        type="button"
+                        onclick="openGalleryCategory('bridal')"
+                    >
+                        View All →
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <!-- Gallery 4 -->
+        <!-- 04 SKIN & FACIAL -->
 
-        <div class="gallery-item">
+        <div class="gallery-category-card">
 
             <img
-                src="gallery4.jpg"
-                alt="Budget Beauty Facial"
+                src="face.jpg"
+                alt="Budget Beauty Skin and Facial"
             >
 
-            <div class="gallery-overlay">
+            <div class="gallery-card-overlay">
 
-                <span>04</span>
+                <div class="gallery-card-content">
 
-                <h3>
-                    Skin & Facial
-                </h3>
+                    <span class="gallery-number">
+                        04
+                    </span>
 
-                <p>
-                    Relaxing skincare and facial care.
-                </p>
+                    <h3>
+                        SKIN & FACIAL
+                    </h3>
+
+                    <p>
+                        Skin & Facial Collection
+                    </p>
+
+                    <button
+                        type="button"
+                        onclick="openGalleryCategory('skin')"
+                    >
+                        View All →
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
+<!-- 05 — NAILS -->
+<div class="gallery-category-card">
+    <img src="nail.jpg.jpg" alt="Nail Art">
+    <div class="gallery-card-overlay">
+        <div class="gallery-card-content">
+            <span class="gallery-number">05</span>
+            <h3>NAILS</h3>
+            <p>Nail Art Collection</p>
+            <button type="button" onclick="openGalleryCategory('nails')">
+                View All →
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- 06 — MEHENDI -->
+<div class="gallery-category-card">
+    <img src="mehandi.jpg.jpg" alt="Mehendi Designs">
+    <div class="gallery-card-overlay">
+        <div class="gallery-card-content">
+            <span class="gallery-number">06</span>
+            <h3>MEHENDI</h3>
+            <p>Mehendi Design Collection</p>
+            <button type="button" onclick="openGalleryCategory('mehendi')">
+                View All →
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- 07 — TATTOO -->
+<div class="gallery-category-card">
+    <img src="tattoh.jpg" alt="Tattoo Designs">
+    <div class="gallery-card-overlay">
+        <div class="gallery-card-content">
+            <span class="gallery-number">07</span>
+            <h3>TATTOO</h3>
+            <p>Tattoo Art Collection</p>
+            <button type="button" onclick="openGalleryCategory('tattoo')">
+                View All →
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- 08 — LIP -->
+<div class="gallery-category-card">
+    <img src="liph.jpg" alt="Lip Beauty">
+    <div class="gallery-card-overlay">
+        <div class="gallery-card-content">
+            <span class="gallery-number">08</span>
+            <h3>LIP</h3>
+            <p>Lip Beauty Collection</p>
+            <button type="button" onclick="openGalleryCategory('lip')">
+                View All →
+            </button>
+        </div>
+    </div>
+</div>
 
 
-        <!-- Gallery 5 -->
 
-        <div class="gallery-item">
 
-            <img
-                src="gallery5.jpg"
-                alt="Budget Beauty Nails"
-            >
+       
 
-            <div class="gallery-overlay">
+    
 
-                <span>05</span>
+  <!-- =========================================
+     FULL PAGE CATEGORY GALLERY
+========================================= -->
 
-                <h3>
-                    Nails
-                </h3>
+<div class="gallery-full-page" id="galleryFullPage">
 
-                <p>
-                    Beautiful and polished nail styling.
-                </p>
+    <!-- HEADER -->
+    <div class="gallery-full-header">
 
-            </div>
+        <button
+            type="button"
+            class="gallery-full-back"
+            onclick="closeGalleryCategory()">
+            ← Back to Gallery
+        </button>
 
+        <div class="gallery-full-title">
+            <p>OUR COLLECTION</p>
+
+            <h2 id="galleryFullTitle">
+                Hair Gallery
+            </h2>
+
+            <span id="galleryFullDescription">
+                Explore our hair beauty collection.
+            </span>
         </div>
 
+    </div>
 
-        <!-- Gallery 6 -->
 
-        <div class="gallery-item gallery-large">
+    <!-- =========================================
+         01 — HAIR
+         YOUR EXISTING HAIR PHOTOS
+    ========================================== -->
 
-            <img
-                src="gallery6.jpg.jpeg"
-                alt="Budget Beauty Mehendi"
-            >
+    <div
+        class="gallery-full-content"
+        id="full-gallery-hair">
 
-            <div class="gallery-overlay">
+        <div class="full-gallery-photo">
+            <img src="gallery2.jpg" alt="Hair Styling">
+        </div>
 
-                <span>06</span>
+        <div class="full-gallery-photo">
+            <img src="gallary1.jpg" alt="Hair Beauty">
+        </div>
 
-                <h3>
-                    Mehendi
-                </h3>
+        <div class="full-gallery-photo">
+            <img src="gallery3.jpg" alt="Hair Styling">
+        </div>
 
-                <p>
-                    Traditional and elegant mehendi designs.
-                </p>
+        <div class="full-gallery-photo">
+            <img src="gallery41.jpg" alt="Hair Beauty">
+        </div>
 
-            </div>
+        <div class="full-gallery-photo">
+            <img src="gallery10.jpg" alt="Hair Styling">
+        </div>
 
+        <div class="full-gallery-photo">
+            <img src="gallery61.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery71.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery81.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery91.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery1011.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery102.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery103.jpg" alt="Hair Beauty">
+        </div>
+
+        <div class="full-gallery-photo">
+            <video controls playsinline>
+                <source src="videohair.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="gallery105.jpg" alt="Hair Beauty">
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         02 — MAKEUP
+         SAMPLE FILES
+    ========================================== -->
+
+    <div
+        class="gallery-full-content"
+        id="full-gallery-makeup">
+
+        <div class="full-gallery-photo">
+            <img src="makeup1.jpg" alt="Makeup">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="makup2.jpg" alt="Makeup">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="makup3.jpg" alt="Makeup">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="makup5.jpg" alt="Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="makup6.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup7.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup8.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup9.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup10.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup11.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup12.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup13.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup14.jpg" alt="Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="makup15.jpg" alt="Makeup">
         </div>
 
 
     </div>
 
 
-    <!-- Gallery Bottom -->
+    <!-- =========================================
+         03 — BRIDAL
+         SAMPLE FILES
+    ========================================== -->
 
-    <div class="gallery-bottom">
+    <div
+        class="gallery-full-content"
+        id="full-gallery-bridal">
 
-        <p>
-            Beauty. Style. Confidence.
-        </p>
+        <div class="full-gallery-photo">
+            <img src="bridal1.jpg" alt="Bridal Makeup">
+        </div>
 
-       <a
-    href="#appointmentForm"
-    class="primary-button"
->
-    Book Your Appointment
-</a>
+        <div class="full-gallery-photo">
+            <img src="bridal2.jpg" alt="Bridal Makeup">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="bridal3.jpg" alt="Bridal Makeup">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="bridal4.jpg" alt="Bridal Makeup">
+        </div>
+<div class="full-gallery-photo">
+            <img src="bridal5.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal6.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal7.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal8.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal9.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal10.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal11.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal12.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal13.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal14.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal16.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal17.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="full-gallery-photo">
+            <img src="bridal18.jpg" alt="Bridal Makeup">
+        </div>
+        
+    </div>
+
+
+    <!-- =========================================
+         04 — SKIN & FACIAL
+         SAMPLE FILES
+    ========================================== -->
+
+    <div
+        class="gallery-full-content"
+        id="full-gallery-skin">
+
+        <div class="full-gallery-photo">
+            <img src="facial1.jpg" alt="Skin Care">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="facial2.jpg" alt="Facial">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="faciale.jpg" alt="Skin Treatment">
+        </div>
+
+        <div class="full-gallery-photo">
+            <img src="facial4.jpg" alt="Facial Treatment">
+        </div>
+ <div class="full-gallery-photo">
+            <img src="facial5.jpg" alt="Facial Treatment">
+        </div> 
+        <div class="full-gallery-photo">
+            <img src="facial6.jpg" alt="Facial Treatment">
+        </div>
+         <div class="full-gallery-photo">
+            <img src="facial7.jpg" alt="Facial Treatment">
+        </div> 
+        <div class="full-gallery-photo">
+            <img src="facial8.jpg" alt="Facial Treatment">
+        </div> 
+        <div class="full-gallery-photo">
+            <img src="facial9.jpg" alt="Facial Treatment">
+        </div>
 
     </div>
+
+
+<!-- 05 — NAILS -->
+<div class="gallery-full-content" id="full-gallery-nails">
+    <div class="full-gallery-photo">
+        <img src="nail1.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail2.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail3.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail5.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail6.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail7.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail8.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail9.jpg" alt="Nail Art Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="nail10.jpg" alt="Nail Art Design">
+    </div>
+
+</div>
+
+<!-- 06 — MEHENDI -->
+<div class="gallery-full-content" id="full-gallery-mehendi">
+    <div class="full-gallery-photo">
+        <img src="mega1.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega2.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega3.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega4.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega5.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega6.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega7.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega8.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega9.jpg" alt="Mehendi Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="mega10.jpg" alt="Mehendi Design">
+    </div>
+
+</div>
+
+<!-- 07 — TATTOO -->
+<div class="gallery-full-content" id="full-gallery-tattoo">
+    <div class="full-gallery-photo">
+        <img src="tatto1.jpg" alt="Tattoo Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="tatto2.jpg" alt="Tattoo Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="tatto3.jpg" alt="Tattoo Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="tatto4.jpg" alt="Tattoo Design">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="tatoo5.jpg" alt="Tattoo Design">
+    </div>
+     <div class="full-gallery-photo">
+        <img src="tatto6.jpg" alt="Tattoo Design">
+    </div>
+</div>
+
+<!-- 08 — LIP -->
+<div class="gallery-full-content" id="full-gallery-lip">
+    <div class="full-gallery-photo">
+        <img src="lip.jpg" alt="Lip Beauty Treatment">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="lip1.jpg" alt="Lip Beauty Treatment">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="lip2.jpg" alt="Lip Beauty Treatment">
+    </div>
+    <div class="full-gallery-photo">
+        <img src="lip8.jpg" alt="Lip Beauty Treatment">
+    </div>
+</div>
 
 </section>
 <!-- =========================
      REVIEWS SLIDER
 ========================= -->
 
+
+
 <div class="reviews-slider" id="reviewsSlider">
+    <!-- REVIEW ARROW BUTTONS -->
+<div class="reviews-navigation">
+    <button type="button" class="reviews-arrow reviews-prev" id="reviewsPrev" aria-label="Previous review">&#10094;</button>
+    <button type="button" class="reviews-arrow reviews-next" id="reviewsNext" aria-label="Next review">&#10095;</button>
+</div>
 
     <div class="reviews-track" id="reviewsTrack">
 
@@ -1107,43 +1536,119 @@
             </div>
         </div>
 
+<!-- REVIEW 9 -->
+<div class="review-card">
+    <div class="review-image">
+        <img src="makup14.jpg" alt="Budget Beauty Client Review 9">
+    </div>
+
+    <div class="review-content">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+
+        <p class="review-text">
+            “The service was lovely, and the team made me feel
+            comfortable throughout. I really appreciated the care
+            and attention to detail.”
+        </p>
+
+        <h3>Happy Client</h3>
+        <span>Beauty Care</span>
+    </div>
+</div>
+
+
+<!-- REVIEW 10 -->
+<div class="review-card">
+    <div class="review-image">
+        <img src="review9.jpg" alt="Budget Beauty Client Review 10">
+    </div>
+
+    <div class="review-content">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+
+        <p class="review-text">
+            “I loved the overall experience. The finish was neat,
+            the styling suited me well, and the service was warm
+            and professional.”
+        </p>
+
+        <h3>Satisfied Client</h3>
+        <span>Hair &amp; Beauty</span>
+    </div>
+</div>
+
+
+<!-- REVIEW 11 -->
+<div class="review-card">
+    <div class="review-image">
+        <img src="review10.jpg" alt="Budget Beauty Client Review 11">
+    </div>
+
+    <div class="review-content">
+        <div class="review-stars">★ ★ ★ ★ ★</div>
+
+        <p class="review-text">
+            “A beautiful and relaxing experience. I felt well cared
+            for, and I was happy with the final result. Thank you
+            to the Budget Beauty team!”
+        </p>
+
+        <h3>Happy Client</h3>
+        <span>Beauty Service</span>
+    </div>
+</div>
+
     </div>
 
 </div>
 
+
 <!-- =========================
-     ACADEMY SECTION
+     PREMIUM ACADEMY SECTION
 ========================= -->
 
 <section id="academy" class="academy-section">
 
-  <div class="academy-logo">
-    <img src="academyback.jpg" alt="Budget Beauty Academy">
-  </div>
+    <div class="academy-card">
 
-  <div class="academy-heading">
-    <p class="section-label">
-      BUDGET BEAUTY ACADEMY
-    </p>
+        <div class="academy-logo">
+            <img src="academyback.jpg" alt="Budget Beauty Academy Logo">
+        </div>
 
-    <h2>
-      Learn beauty.<br>
-      <span>Build your future.</span>
-    </h2>
+        <p class="academy-label">BUDGET BEAUTY • ACADEMY</p>
 
-    <p>
-      Turn your passion for beauty into professional skills.
-      Explore our academy courses, practical training and
-      career-focused beauty programs.
-    </p>
+        <h2>
+            Learn the Art of Beauty.
+            <span>Build Your Future.</span>
+        </h2>
 
-    <a href="academy.html" class="academy-button">
-      Enquire About Our Academy Courses →
-    </a>
+        <p class="academy-description">
+            Turn your passion for beauty into professional skills.
+            Discover our beauty courses, practical training and
+            opportunities to begin your beauty career.
+        </p>
 
-  </div>
+        <div class="academy-availability">
+            <span class="availability-dot"></span>
+            BEAUTY COURSES AVAILABLE
+            <span class="availability-arrow">↓</span>
+        </div>
+
+       
+<a href="academy.html" class="academy-button">
+    <span>Explore Our Academy</span>
+    <span class="academy-button-arrow">→</span>
+</a>
+
+
+        <p class="academy-note">
+            Your beauty journey starts here.
+        </p>
+
+    </div>
 
 </section>
+
 
 <!-- =========================
      SOCIAL MEDIA
@@ -1669,6 +2174,8 @@ function sendAppointmentToWhatsApp(event) {
 
 const serviceData = {
 
+
+
     hair: {
         title: "Hair",
         image: "hair.jpg.jpg",
@@ -1678,31 +2185,48 @@ const serviceData = {
             "Haircut",
             "Hair Styling",
             "Hair Coloring",
+            "Hair Highlights",
             "Hair Extensions",
             "Keratin Treatment",
             "Permanent Hair Straightening",
             "Permanent Hair Smoothening",
+            "Botox Treatment",
             "Hair Spa",
-            "Hair Oil Massage",
+            "Head Oil Massage",
             "Braids",
             "Blowouts"
         ]
     },
+
+    
+
 
     skin: {
         title: "Skin & Facial",
         image: "skin.jpg.jpg",
         description:
         "Relaxing skincare and facial services designed to refresh, nourish and enhance your skin.",
-        services: [
-            "Facials",
-            "Skin Care",
-            "Acne Treatment",
-            "Cleanup",
-            "Blackhead Removal",
-            "Whitehead Removal",
-            "Tanning Care"
-        ]
+        
+services: [
+    "Facials",
+    "Classic European Facial",
+    "Bridal Golden Facial",
+    "Pigmentation Facial",
+    "Anti-Aging Facial",
+    "Hydra Facial",
+    "Oxygen Facial",
+    "Chemical Peel",
+    "LED Light Therapy",
+    "Microneedling",
+    "Skin Care",
+    "Acne Treatment",
+    "Cleanup",
+    "Blackhead Removal",
+    "Whitehead Removal",
+    "Detan / Bleach",
+    "Tanning Care"
+]
+
     },
 
     nails: {
@@ -1733,13 +2257,15 @@ const serviceData = {
 
    lip: {
     title: "Lip",
-    image: "lip.jpg",
+    image: "liph.jpg",
     description:
     "Professional lip pigmentation treatments designed to enhance lip colour and create a beautiful, natural-looking finish.",
-    services: [
-        "Single Sitting – Color Correction",
-        "Color Infusion – Second Sitting"
-    ]
+    
+services: [
+    "Single Sitting – Color Correction – ₹4,800",
+    "Color Infusion + Second Sitting – ₹5,999"
+]
+
 },
 
     brows: {
@@ -1747,10 +2273,13 @@ const serviceData = {
     image: "brows.jpg.jpg",
     description:
     "Professional eyelash extensions designed to enhance your natural beauty.",
-    services: [
-        "Classic – ₹2,000",
-        "Hybrid – ₹3,500"
-    ]
+    
+services: [
+    "Microblading – ₹4,500",
+    "Classic Lash Extension – ₹2,500",
+    "Hybrid Lash Extension – ₹3,500"
+]
+
 },
 tattoo: {
     title: "Tattoo",
@@ -2178,6 +2707,29 @@ if (reviewsSlider && reviewsTrack) {
         }
 
 
+/* =========================
+   MANUAL ARROW BUTTONS
+========================= */
+
+const reviewsPrev = document.getElementById("reviewsPrev");
+const reviewsNext = document.getElementById("reviewsNext");
+
+if (reviewsPrev) {
+    reviewsPrev.addEventListener("click", function () {
+        stopAutoSlide();
+        previousReview();
+        startAutoSlide();
+    });
+}
+
+if (reviewsNext) {
+    reviewsNext.addEventListener("click", function () {
+        stopAutoSlide();
+        nextReview();
+        startAutoSlide();
+    });
+}
+
         /* =========================
            LOOP
         ========================= */
@@ -2564,40 +3116,272 @@ I would like to book this bridal makeup package. Please confirm the availability
   });
 
 }
+</script>
+<script>
+    /* =========================================
+   BUDGET BEAUTY GALLERY
+   CATEGORY OPEN / CLOSE
+========================================= */
+
+function openGalleryCategory(category) {
+
+    const galleryFullPage =
+        document.getElementById("galleryFullPage");
+
+    const title =
+        document.getElementById("galleryFullTitle");
+
+    const description =
+        document.getElementById("galleryFullDescription");
 
 
-/* =========================
-   CLOSE BRIDAL FORM
-   WHEN CLICKING OUTSIDE
-========================= */
-
-const bridalFormOverlay =
-  document.getElementById("bridalForm");
-
-if (bridalFormOverlay) {
-
-  bridalFormOverlay.addEventListener("click", function(event) {
-
-    if (event.target === bridalFormOverlay) {
-      closeBridalForm();
+    if (!galleryFullPage) {
+        return;
     }
 
-  });
+
+    /* CATEGORY DETAILS */
+
+    const categoryData = {
+
+        hair: {
+            title: "Hair Gallery",
+            description:
+                "Explore our hair beauty and styling collection."
+        },
+
+        makeup: {
+            title: "Makeup Gallery",
+            description:
+                "Explore our elegant makeup collection."
+        },
+
+        bridal: {
+            title: "Bridal Gallery",
+            description:
+                "Explore our bridal beauty collection."
+        },
+
+        skin: {
+            title: "Skin & Facial Gallery",
+            description:
+                "Explore our skincare and facial collection."
+        },
+
+        nails: {
+            title: "Nails Gallery",
+            description:
+                "Explore our nail beauty collection."
+        },
+
+        mehendi: {
+            title: "Mehendi Gallery",
+            description:
+                "Explore our mehendi design collection."
+        },
+
+        tattoo: {
+            title: "Tattoo Gallery",
+            description:
+                "Explore our tattoo collection."
+        },
+
+        lip: {
+            title: "Lip Gallery",
+            description:
+                "Explore our lip beauty collection."
+        }
+
+    };
+
+
+    /* =========================================
+       HIDE ALL GALLERY CONTENT
+    ========================================= */
+
+    document
+        .querySelectorAll(".gallery-full-content")
+        .forEach(function(gallery) {
+
+            gallery.classList.remove("active");
+
+        });
+
+
+    /* =========================================
+       SHOW ONLY SELECTED CATEGORY
+    ========================================= */
+
+    const selectedGallery =
+        document.getElementById(
+            "full-gallery-" + category
+        );
+
+
+    if (!selectedGallery) {
+
+        console.log(
+            "Gallery not found:",
+            "full-gallery-" + category
+        );
+
+        return;
+    }
+
+
+    selectedGallery.classList.add("active");
+
+
+    /* =========================================
+       UPDATE TITLE
+    ========================================= */
+
+    if (categoryData[category]) {
+
+        if (title) {
+
+            title.textContent =
+                categoryData[category].title;
+
+        }
+
+
+        if (description) {
+
+            description.textContent =
+                categoryData[category].description;
+
+        }
+
+    }
+
+
+    /* =========================================
+       OPEN FULL PAGE
+    ========================================= */
+
+    galleryFullPage.classList.add("active");
+
+    document.body.classList.add("overlay-open");
 
 }
 
 
-/* =========================
-   ESC KEY → CLOSE FORM
-========================= */
+/* =========================================
+   CLOSE GALLERY
+========================================= */
+
+function closeGalleryCategory() {
+
+    const galleryFullPage =
+        document.getElementById("galleryFullPage");
+
+
+    if (!galleryFullPage) {
+        return;
+    }
+
+
+    galleryFullPage.classList.remove("active");
+
+
+    document
+        .querySelectorAll(".gallery-full-content")
+        .forEach(function(gallery) {
+
+            gallery.classList.remove("active");
+
+        });
+
+
+    document.body.classList.remove("overlay-open");
+
+}
+
+
+/* =========================================
+   ESC KEY
+========================================= */
 
 document.addEventListener("keydown", function(event) {
 
-  if (event.key === "Escape") {
-    closeBridalForm();
-  }
+    if (event.key === "Escape") {
+
+        closeGalleryCategory();
+
+    }
 
 });
+
+
 </script>
+
+<style>
+/* Budget Beauty - Review Arrow Fix */
+
+#reviewsSlider {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+#reviewsSlider .reviews-navigation {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 999 !important;
+    pointer-events: none !important;
+}
+
+#reviewsSlider .reviews-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    width: 44px !important;
+    height: 44px !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: 1px solid #e88eac !important;
+    border-radius: 50% !important;
+    background: #fff0f5 !important;
+    color: #c43f70 !important;
+
+    font-size: 20px !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 1000 !important;
+}
+
+#reviewsSlider .reviews-prev {
+    left: 12px !important;
+}
+
+#reviewsSlider .reviews-next {
+    right: 12px !important;
+}
+
+#reviewsSlider .reviews-arrow:hover {
+    background: #c43f70 !important;
+    color: #ffffff !important;
+}
+</style>
+
+<style>
+/* Show Courses Available button on mobile */
+
+@media (max-width: 768px) {
+    .academy-button {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+</style>
+
 </body>
 </html>

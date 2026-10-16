@@ -252,481 +252,6 @@
     </div>
 
 </section>
-<!-- =========================
-     BRIDAL SPECIAL BOOKING
-========================= -->
-<section class="bridal-booking-section" id="bridal">
-
-  <div class="bridal-overlay">
-
-    <div class="bridal-heading">
-      <span>BRIDAL SPECIAL</span>
-
-      <h2>Special Booking for Brides</h2>
-
-      <p class="bridal-note">
-        <strong>Important Note:</strong>
-        Please select and book any one of the three bridal makeup
-        packages to continue your bridal booking.
-      </p>
-    </div>
-
-    <div class="bridal-packages">
-
-      <!-- 01 Complete BB Lush -->
-      <div class="bridal-package">
-        <h3>Complete BB Lush</h3>
-
-        <p>
-          A beautiful bridal makeup look designed for your special day.
-        </p>
-
-       <button
-  type="button"
-  class="bridal-book-btn"
-  onclick="openBridalForm('Complete BB Lush')">
-  Book Now
-</button>
-      </div>
-
-
-      <!-- 02 Air Brush -->
-      <div class="bridal-package">
-        <h3>Air Brush</h3>
-
-        <p>
-          A smooth and flawless airbrush bridal makeup experience.
-        </p>
-
-       <button
-  type="button"
-  class="bridal-book-btn"
-  onclick="openBridalForm('Air Brush')">
-  Book Now
-</button>
-      </div>
-
-
-      <!-- 03 HD Makeup -->
-      <div class="bridal-package">
-        <h3>HD Makeup</h3>
-
-        <p>
-          A refined HD makeup look for a flawless bridal appearance.
-        </p>
-
-       <button
-  type="button"
-  class="bridal-book-btn"
-  onclick="openBridalForm('HD Makeup')">
-  Book Now
-</button>
-      </div>
-
-
-      <!-- 04 Groom -->
-      <div class="bridal-package">
-        <h3>Groom</h3>
-
-        <p>
-          Professional grooming and makeup for the groom.
-        </p>
-      </div>
-
-
-      <!-- 05 Bridesmaid -->
-      <div class="bridal-package">
-        <h3>Bridesmaid</h3>
-
-        <p>
-          Elegant makeup styling for bridesmaids and special guests.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- =========================
-     BRIDAL BOOKING FORM
-========================= -->
-<div class="bridal-form-overlay" id="bridalForm">
-
-  <div class="bridal-form-box">
-
-    <button type="button" class="close-form" onclick="closeBridalForm()">
-      ×
-    </button>
-
-    <span class="form-label">BRIDAL BOOKING</span>
-
-    <h2>Book Your Bridal Makeup</h2>
-
-    <p>
-      Please fill in your details to continue your booking.
-    </p>
-
-    <form id="bridalBookingForm">
-
-      <!-- Makeup Package -->
-      <label for="makeupPackage">Makeup Package</label>
-
-      <select id="makeupPackage" name="makeupPackage" required>
-        <option value="Complete BB Lush">Complete BB Lush</option>
-        <option value="Air Brush">Air Brush</option>
-        <option value="HD Makeup">HD Makeup</option>
-      </select>
-
-
-      <!-- Bride Name -->
-      <label for="brideName">Bride Name</label>
-
-      <input
-        type="text"
-        id="brideName"
-        name="brideName"
-        placeholder="Enter your name"
-        required
-      />
-
-
-      <!-- Phone -->
-      <label for="bridePhone">Phone Number</label>
-
-      <input
-        type="tel"
-        id="bridePhone"
-        name="bridePhone"
-        placeholder="Enter your phone number"
-        required
-      />
-
-
-      <!-- Additional Services -->
-      <label>Additional Services <span>(Optional)</span></label>
-
-      <div class="additional-services">
-
-        <label>
-          <input
-            type="checkbox"
-            name="additionalService"
-            value="Groom Makeup"
-          />
-          Groom Makeup
-        </label>
-
-        <label>
-          <input
-            type="checkbox"
-            name="additionalService"
-            value="Bridesmaid"
-          />
-          Bridesmaid
-        </label>
-
-      </div>
-
-
-      <!-- Function Venue -->
-      <label for="functionVenue">Function Venue</label>
-
-      <input
-        type="text"
-        id="functionVenue"
-        name="functionVenue"
-        placeholder="Enter function venue"
-        required
-      />
-
-
-      <!-- Full Address -->
-      <label for="functionAddress">Full Address</label>
-
-      <textarea
-        id="functionAddress"
-        name="functionAddress"
-        rows="3"
-        placeholder="Enter complete venue address in Trichy"
-        required
-      ></textarea>
-
-
-      <!-- Date -->
-      <label for="bookingDate">Booking Date</label>
-
-      <input
-        type="date"
-        id="bookingDate"
-        name="bookingDate"
-        required
-      />
-
-
-      <!-- Time -->
-      <label for="bookingTime">Preferred Time</label>
-
-      <input
-        type="time"
-        id="bookingTime"
-        name="bookingTime"
-        required
-      />
-
-
-      <!-- Submit -->
-      <button type="submit" class="booking-submit-btn">
-        Book Appointment
-      </button>
-
-    </form>
-
-  </div>
-
-</div>
-
-            <!-- =========================
-     SERVICES
-========================= -->
-<section class="services" id="services">
-
-    <div class="services-header">
-        <p class="section-label"> OUR SERVICES</p>
-
-        <h2>
-            Beauty, care &
-            <span>confidence.</span>
-        </h2>
-
-        <p class="services-intro">
-            From everyday beauty to special occasions,
-            discover services designed around you.
-        </p>
-    </div>
-
-    <div class="services-grid">
-
-        <!-- HAIR -->
-        <div class="service-card">
-            <span class="service-number">01</span>
-            <h3>Hair</h3>
-            <p>
-                Styling, cutting, colouring and professional
-                hair treatments.
-            </p>
-            <button onclick="openService('hair')">
-    Explore Services →
-</button>
-        </div>
-
-        <!-- SKIN -->
-        <div class="service-card">
-            <span class="service-number">02</span>
-            <h3>Skin & Facial</h3>
-            <p>
-                Facials, skincare and treatments for healthy,
-                beautiful skin.
-            </p>
-           <button onclick="openService('skin')">
-    Explore Services →
-</button>
-        </div>
-
-        <!-- NAILS -->
-        <div class="service-card">
-            <span class="service-number">03</span>
-            <h3>Nails</h3>
-            <p>
-                Manicure, pedicure, nail art and acrylic
-                nail services.
-            </p>
-            <button onclick="openService('nails')">
-    Explore Services →
-</button>
-        </div>
-
-        <!-- MAKEUP -->
-        <div class="service-card">
-            <span class="service-number">04</span>
-            <h3>Makeup</h3>
-            <p>
-                Professional makeup services for everyday
-                looks and special occasions.
-            </p>
-            <button onclick="openService('makeup')">
-    Explore Services →
-</button>
-        </div>
-
-        <!-- LIP -->
-<div class="service-card featured-service">
-    <span class="service-number">05</span>
-    <h3>Lip</h3>
-    <p>
-        Professional lip pigmentation and lip
-        enhancement treatments for a beautiful finish.
-    </p>
-    <button onclick="openService('lip')">
-        Explore Services →
-    </button>
-</div>
-        
-
-        <!-- BROWS & LASHES -->
-        <div class="service-card">
-            <span class="service-number">06</span>
-            <h3>Brows & Lashes</h3>
-            <p>
-                Brows, lashes, extensions and microblading
-                for a refined look.
-            </p>
-            <button onclick="openService('brows')">
-    Explore Services →
-</button>
-        </div>
-<!-- TATTOO -->
-<div class="service-card">
-    <span class="service-number">07</span>
-    <h3>Tattoo</h3>
-    <p>
-        Creative and professional tattoo designs
-        crafted with precision and care.
-    </p>
-    <button onclick="openService('tattoo')">
-        Explore Services →
-    </button>
-</div>
-
-        <!-- PRODUCTS -->
-<div class="service-card">
-    <span class="service-number">08</span>
-    <h3>Products</h3>
-    <p>
-        Carefully selected beauty products for
-        professional care and everyday beauty.
-    </p>
-    <button onclick="openService('products')">
-        Explore Products →
-    </button>
-</div>
-    </div>
-
-</section>
-<!-- =========================
-     WHY CHOOSE US
-========================= -->
-
-<section class="why-choose-section" id="why-choose">
-
-    <div class="why-choose-header">
-        <p class="section-label">WHY CHOOSE US</p>
-
-        <h2>
-            Beauty crafted with
-            <span>experience & perfection.</span>
-        </h2>
-
-        <p class="why-choose-intro">
-            Experience the art of beautiful bridal transformations,
-            created with care, precision and a passion for beauty.
-        </p>
-    </div>
-
-
-    <!-- MAIN FEATURES -->
-    <div class="why-main-features">
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>5+ years of bridal expertise</p>
-        </div>
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>1000+ satisfied clients</p>
-        </div>
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>Premium international products</p>
-        </div>
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>Natural, flawless finishing</p>
-        </div>
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>Client-friendly services</p>
-        </div>
-
-        <div class="why-feature">
-            <span>✓</span>
-            <p>Reputation as Trichy's No.1 bridal studio</p>
-        </div>
-
-    </div>
-
-
-    <!-- IMAGE + HIGHLIGHTS -->
-    <div class="why-choose-content">
-
-        <div class="why-choose-image">
-            <img src="review3.jpg.png" alt="Budget Beauty Bridal">
-        </div>
-
-        <div class="why-highlights">
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Flawless Look</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Luxury Service</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Premium Products</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Professional Team</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Bridal Glow Guaranteed</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>Timely Perfection</h3>
-            </div>
-
-            <div class="why-highlight">
-                <span>✓</span>
-                <h3>HD Photography Ready</h3>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-   <!-- =========================================
-     BUDGET BEAUTY GALLERY
-========================================= -->
-
 <section id="gallery" class="gallery-section">
 
     <!-- GALLERY HEADER -->
@@ -1354,6 +879,475 @@
 </div>
 
 </section>
+<!-- =========================
+     BRIDAL SPECIAL BOOKING
+========================= -->
+<section class="bridal-booking-section" id="bridal">
+
+  <div class="bridal-overlay">
+
+    <div class="bridal-heading">
+      <span>BRIDAL SPECIAL</span>
+
+      <h2>Special Booking for Brides</h2>
+
+      <p class="bridal-note">
+        <strong>Important Note:</strong>
+        Please select and book any one of the three bridal makeup
+        packages to continue your bridal booking.
+      </p>
+    </div>
+
+    <div class="bridal-packages">
+
+      <!-- 01 Complete BB Lush -->
+      <div class="bridal-package">
+        <h3>Complete BB Lush</h3>
+
+        <p>
+          A beautiful bridal makeup look designed for your special day.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('Complete BB Lush')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 02 Air Brush -->
+      <div class="bridal-package">
+        <h3>Air Brush</h3>
+
+        <p>
+          A smooth and flawless airbrush bridal makeup experience.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('Air Brush')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 03 HD Makeup -->
+      <div class="bridal-package">
+        <h3>HD Makeup</h3>
+
+        <p>
+          A refined HD makeup look for a flawless bridal appearance.
+        </p>
+
+       <button
+  type="button"
+  class="bridal-book-btn"
+  onclick="openBridalForm('HD Makeup')">
+  Book Now
+</button>
+      </div>
+
+
+      <!-- 04 Groom -->
+      <div class="bridal-package">
+        <h3>Groom</h3>
+
+        <p>
+          Professional grooming and makeup for the groom.
+        </p>
+      </div>
+
+
+      <!-- 05 Bridesmaid -->
+      <div class="bridal-package">
+        <h3>Bridesmaid</h3>
+
+        <p>
+          Elegant makeup styling for bridesmaids and special guests.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+     BRIDAL BOOKING FORM
+========================= -->
+<div class="bridal-form-overlay" id="bridalForm">
+
+  <div class="bridal-form-box">
+
+    <button type="button" class="close-form" onclick="closeBridalForm()">
+      ×
+    </button>
+
+    <span class="form-label">BRIDAL BOOKING</span>
+
+    <h2>Book Your Bridal Makeup</h2>
+
+    <p>
+      Please fill in your details to continue your booking.
+    </p>
+
+    <form id="bridalBookingForm">
+
+      <!-- Makeup Package -->
+      <label for="makeupPackage">Makeup Package</label>
+
+      <select id="makeupPackage" name="makeupPackage" required>
+        <option value="Complete BB Lush">Complete BB Lush</option>
+        <option value="Air Brush">Air Brush</option>
+        <option value="HD Makeup">HD Makeup</option>
+      </select>
+
+
+      <!-- Bride Name -->
+      <label for="brideName">Bride Name</label>
+
+      <input
+        type="text"
+        id="brideName"
+        name="brideName"
+        placeholder="Enter your name"
+        required
+      />
+
+
+      <!-- Phone -->
+      <label for="bridePhone">Phone Number</label>
+
+      <input
+        type="tel"
+        id="bridePhone"
+        name="bridePhone"
+        placeholder="Enter your phone number"
+        required
+      />
+
+
+      <!-- Additional Services -->
+      <label>Additional Services <span>(Optional)</span></label>
+
+      <div class="additional-services">
+
+        <label>
+          <input
+            type="checkbox"
+            name="additionalService"
+            value="Groom Makeup"
+          />
+          Groom Makeup
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="additionalService"
+            value="Bridesmaid"
+          />
+          Bridesmaid
+        </label>
+
+      </div>
+
+
+      <!-- Function Venue -->
+      <label for="functionVenue">Function Venue</label>
+
+      <input
+        type="text"
+        id="functionVenue"
+        name="functionVenue"
+        placeholder="Enter function venue"
+        required
+      />
+
+
+      <!-- Full Address -->
+      <label for="functionAddress">Full Address</label>
+
+      <textarea
+        id="functionAddress"
+        name="functionAddress"
+        rows="3"
+        placeholder="Enter complete venue address in Trichy"
+        required
+      ></textarea>
+
+
+      <!-- Date -->
+      <label for="bookingDate">Booking Date</label>
+
+      <input
+        type="date"
+        id="bookingDate"
+        name="bookingDate"
+        required
+      />
+
+
+      <!-- Time -->
+      <label for="bookingTime">Preferred Time</label>
+
+      <input
+        type="time"
+        id="bookingTime"
+        name="bookingTime"
+        required
+      />
+
+
+      <!-- Submit -->
+      <button type="submit" class="booking-submit-btn">
+        Book Appointment
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+            <!-- =========================
+     SERVICES
+========================= -->
+<section class="services" id="services">
+
+    <div class="services-header">
+        <p class="section-label"> OUR SERVICES</p>
+
+        <h2>
+            Beauty, care &
+            <span>confidence.</span>
+        </h2>
+
+        <p class="services-intro">
+            From everyday beauty to special occasions,
+            discover services designed around you.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <!-- HAIR -->
+        <div class="service-card">
+            <span class="service-number">01</span>
+            <h3>Hair</h3>
+            <p>
+                Styling, cutting, colouring and professional
+                hair treatments.
+            </p>
+            <button onclick="openService('hair')">
+    Explore Services →
+</button>
+        </div>
+
+        <!-- SKIN -->
+        <div class="service-card">
+            <span class="service-number">02</span>
+            <h3>Skin & Facial</h3>
+            <p>
+                Facials, skincare and treatments for healthy,
+                beautiful skin.
+            </p>
+           <button onclick="openService('skin')">
+    Explore Services →
+</button>
+        </div>
+
+        <!-- NAILS -->
+        <div class="service-card">
+            <span class="service-number">03</span>
+            <h3>Nails</h3>
+            <p>
+                Manicure, pedicure, nail art and acrylic
+                nail services.
+            </p>
+            <button onclick="openService('nails')">
+    Explore Services →
+</button>
+        </div>
+
+        <!-- MAKEUP -->
+        <div class="service-card">
+            <span class="service-number">04</span>
+            <h3>Makeup</h3>
+            <p>
+                Professional makeup services for everyday
+                looks and special occasions.
+            </p>
+            <button onclick="openService('makeup')">
+    Explore Services →
+</button>
+        </div>
+
+        <!-- LIP -->
+<div class="service-card featured-service">
+    <span class="service-number">05</span>
+    <h3>Lip</h3>
+    <p>
+        Professional lip pigmentation and lip
+        enhancement treatments for a beautiful finish.
+    </p>
+    <button onclick="openService('lip')">
+        Explore Services →
+    </button>
+</div>
+        
+
+        <!-- BROWS & LASHES -->
+        <div class="service-card">
+            <span class="service-number">06</span>
+            <h3>Brows & Lashes</h3>
+            <p>
+                Brows, lashes, extensions and microblading
+                for a refined look.
+            </p>
+            <button onclick="openService('brows')">
+    Explore Services →
+</button>
+        </div>
+<!-- TATTOO -->
+<div class="service-card">
+    <span class="service-number">07</span>
+    <h3>Tattoo</h3>
+    <p>
+        Creative and professional tattoo designs
+        crafted with precision and care.
+    </p>
+    <button onclick="openService('tattoo')">
+        Explore Services →
+    </button>
+</div>
+
+        <!-- PRODUCTS -->
+<div class="service-card">
+    <span class="service-number">08</span>
+    <h3>Products</h3>
+    <p>
+        Carefully selected beauty products for
+        professional care and everyday beauty.
+    </p>
+    <button onclick="openService('products')">
+        Explore Products →
+    </button>
+</div>
+    </div>
+
+</section>
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="why-choose-section" id="why-choose">
+
+    <div class="why-choose-header">
+        <p class="section-label">WHY CHOOSE US</p>
+
+        <h2>
+            Beauty crafted with
+            <span>experience & perfection.</span>
+        </h2>
+
+        <p class="why-choose-intro">
+            Experience the art of beautiful bridal transformations,
+            created with care, precision and a passion for beauty.
+        </p>
+    </div>
+
+
+    <!-- MAIN FEATURES -->
+    <div class="why-main-features">
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>5+ years of bridal expertise</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>1000+ satisfied clients</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Premium international products</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Natural, flawless finishing</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Client-friendly services</p>
+        </div>
+
+        <div class="why-feature">
+            <span>✓</span>
+            <p>Reputation as Trichy's No.1 bridal studio</p>
+        </div>
+
+    </div>
+
+
+    <!-- IMAGE + HIGHLIGHTS -->
+    <div class="why-choose-content">
+
+        <div class="why-choose-image">
+            <img src="review3.jpg.png" alt="Budget Beauty Bridal">
+        </div>
+
+        <div class="why-highlights">
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Flawless Look</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Luxury Service</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Premium Products</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Professional Team</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Bridal Glow Guaranteed</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>Timely Perfection</h3>
+            </div>
+
+            <div class="why-highlight">
+                <span>✓</span>
+                <h3>HD Photography Ready</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- =========================
      REVIEWS SLIDER
 ========================= -->

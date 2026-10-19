@@ -1783,23 +1783,23 @@ a {
 
 .academy-section {
     min-height: 600px;
-
     padding: 110px 6%;
-
     display: flex;
-
     align-items: center;
+
+    position: relative;
+    isolation: isolate;
 
     background:
         linear-gradient(
-            rgba(63, 41, 48, 0.72),
-            rgba(63, 41, 48, 0.72)
+            rgba(255, 245, 248, 0.72),
+            rgba(255, 245, 248, 0.72)
         ),
         url("academy.jpg");
 
     background-size: cover;
-
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .academy-content {
@@ -3357,24 +3357,18 @@ body.overlay-open {
 /* COURSE BOX */
 
 .academy-card {
-    background: #ffffff;
+    background: transparent !important;
     padding: 35px;
     min-height: 220px;
-
-    border: 1px solid rgba(43, 27, 18, 0.10);
-
-    box-shadow: 0 15px 40px rgba(43, 27, 18, 0.07);
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+    transition: none;
 }
 
 .academy-card:hover {
-    transform: translateY(-6px);
-
-    box-shadow: 0 20px 45px rgba(43, 27, 18, 0.12);
+    transform: none !important;
+    box-shadow: none !important;
 }
-
 
 /* NUMBER */
 
@@ -5893,20 +5887,27 @@ video {
    ACADEMY LOGO
 ========================================= */
 
+/* ACADEMY TRAINING IMAGE */
+
 .academy-section .academy-logo {
-    width: 270px;
-    height: 270px;
-    margin: 0 auto 35px;
-    overflow: hidden;
-    border-radius: 50%;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 340px !important;
+    margin: 0 auto 35px !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+    aspect-ratio: auto !important;
+    clip-path: none !important;
+    shape-outside: none !important;
 }
 
 .academy-section .academy-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+    border-radius: 0 !important;
 }
 
 
@@ -6008,24 +6009,25 @@ video {
 /* =========================================
    MOBILE
 ========================================= */
-
 @media (max-width: 768px) {
-
-    .academy-section {
-        padding: 60px 20px 75px !important;
-    }
-
     .academy-section .academy-logo {
-        width: 210px;
-        height: 210px;
-        margin-bottom: 32px;
+        width: calc(100% + 40px) !important;
+        max-width: none !important;
+        height: 240px !important;
+        margin: -20px -20px 32px !important;
+        border-radius: 0 !important;
+        overflow: hidden !important;
     }
 
-    .academy-section .academy-heading {
-        max-width: 100%;
+    .academy-section .academy-logo img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 0 !important;
     }
-
 }
+
+
 /* =========================================================
    BRIDAL BOOKING POPUP
 ========================================================= */
@@ -7276,7 +7278,32 @@ video {
         transform: translateY(4px);
     }
 }
+/* ACADEMY - MOBILE CENTER FIX */
 
+@media (max-width: 600px) {
+    .academy-section .academy-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 35px 18px !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .academy-section .academy-label,
+    .academy-section .academy-card h2,
+    .academy-section .academy-card h2 span,
+    .academy-section .academy-description,
+    .academy-section .academy-note {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box !important;
+    }
+}
 /* TABLET */
 @media (max-width: 768px) {
     .academy-section {
@@ -7486,4 +7513,455 @@ video {
   .course-image {
     height: 190px;
   }
+}
+
+/* ACADEMY SECTION - FINAL FIX */
+
+.academy-section {
+    width: 100% !important;
+    min-height: 500px !important;
+    padding: 90px 6% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+   background: url("academy4.jpg") center center / cover no-repeat !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Remove the old logo */
+.academy-section .academy-logo {
+    display: none !important;
+}
+
+/* Remove the white content box */
+.academy-section .academy-card {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 30px 20px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    text-align: center !important;
+}
+
+/* Keep the existing content visible */
+.academy-section .academy-label,
+.academy-section .academy-card h2,
+.academy-section .academy-description,
+.academy-section .academy-availability,
+.academy-section .academy-note {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.academy-section .academy-card h2 {
+    color: #2b2023 !important;
+    font-size: clamp(36px, 5vw, 58px) !important;
+    line-height: 1.2 !important;
+}
+
+.academy-section .academy-card h2 span {
+    display: block !important;
+    color: #c75d79 !important;
+}
+
+.academy-section .academy-description,
+.academy-section .academy-note {
+    color: #625458 !important;
+    line-height: 1.8 !important;
+}
+
+@media (max-width: 600px) {
+    .academy-section {
+        min-height: 450px !important;
+        padding: 65px 5% !important;
+    }
+
+    .academy-section .academy-card {
+        padding: 20px 5px !important;
+    }
+
+    .academy-section .academy-card h2 {
+        font-size: 36px !important;
+    }
+}
+/* ACADEMY TEXT VISIBILITY FIX */
+
+.academy-section {
+    background-image:
+        rgba(20, 10, 15, 0.20),
+rgba(20, 10, 15, 0.20)
+        
+        url("academy4.jpg") !important;
+
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.academy-section .academy-label,
+.academy-section .academy-card h2,
+.academy-section .academy-card h2 span,
+.academy-section .academy-description,
+.academy-section .academy-note {
+    color: #ffffff !important;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.65) !important;
+}
+
+.academy-section .academy-availability {
+    background: rgba(255, 255, 255, 0.96) !important;
+    color: #c23e70 !important;
+}
+
+.academy-section .academy-button {
+    background: #d9437b !important;
+    color: #ffffff !important;
+}
+/* ACADEMY - CENTER ALIGNMENT */
+
+.academy-section .academy-card {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.academy-section .academy-label,
+.academy-section .academy-card h2,
+.academy-section .academy-description,
+.academy-section .academy-availability,
+.academy-section .academy-note {
+    text-align: center !important;
+}
+/* ACADEMY - WHITE HEADINGS & PINK SUBTITLES */
+
+.academy-section .academy-label,
+.academy-section .academy-card h2 {
+    color: #ffffff !important;
+    text-align: center !important;
+}
+
+.academy-section .academy-card h2 span {
+    color: #ffffff !important;
+}
+
+.academy-section .academy-description,
+.academy-section .academy-note {
+    color: #ffb6d0 !important;
+    text-align: center !important;
+}
+
+.academy-section .academy-availability {
+    color: #d9437b !important;
+}
+/* ACADEMY - CENTER BRAND AND MAIN HEADING */
+
+.academy-section .academy-label {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.academy-section .academy-card h2 {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.academy-section .academy-card h2 span {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.academy-section .academy-description,
+.academy-section .academy-note {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ACADEMY FINAL DESIGN */
+
+#academy {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background-position: center center !important;
+}
+
+#academy .academy-card {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 35px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 22px !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+#academy .academy-label {
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+#academy .academy-card h2 {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+#academy .academy-card h2 span {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+#academy .academy-description,
+#academy .academy-note {
+    width: 100% !important;
+    max-width: 650px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    color: #ffb6d0 !important;
+}
+
+#academy .academy-availability {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#academy .academy-button {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media (max-width: 600px) {
+    #academy {
+        padding: 45px 15px !important;
+    }
+
+    #academy .academy-card {
+        padding: 25px 5px !important;
+        gap: 18px !important;
+    }
+
+    #academy .academy-card h2 {
+        font-size: 36px !important;
+    }
+}
+
+/* PRODUCTS GALLERY — SPACING FIX */
+
+#full-gallery-products.active {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+#full-gallery-products .full-gallery-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f7f3f3;
+}
+
+#full-gallery-products .full-gallery-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    #full-gallery-products.active {
+        gap: 10px;
+    }
+}
+/* ACADEMY SECTION — CLEAN FINAL LAYOUT */
+
+#academy.academy-section,
+.academy-section#academy {
+    position: relative !important;
+    isolation: isolate;
+    min-height: 560px !important;
+    padding: 65px 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background-image:
+        linear-gradient(
+            rgba(35, 15, 25, 0.48),
+            rgba(35, 15, 25, 0.58)
+        ),
+        url("academy4.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    text-align: center !important;
+}
+
+#academy .academy-card {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 0 auto !important;
+    padding: 25px 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-align: center !important;
+}
+
+#academy .academy-logo {
+    display: none !important;
+}
+
+#academy .academy-label {
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px !important;
+    line-height: 1.7 !important;
+}
+
+#academy .academy-card h2 {
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-size: clamp(34px, 5vw, 54px) !important;
+    line-height: 1.18 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+}
+
+#academy .academy-card h2 span {
+    display: block !important;
+    margin-top: 5px !important;
+    color: #ffc0d5 !important;
+}
+
+#academy .academy-description {
+    width: 100% !important;
+    max-width: 580px !important;
+    margin: 0 !important;
+    color: #ffffff !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+#academy .academy-availability {
+    align-self: center !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 11px 17px !important;
+    background: #ffffff !important;
+    border: 1px solid #f3b3c8 !important;
+    border-radius: 40px !important;
+    color: #c73569 !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+}
+
+#academy .academy-button {
+    align-self: center !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 14px 23px !important;
+    background: #d9437b !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+#academy .academy-button span {
+    color: #ffffff !important;
+}
+
+#academy .academy-note {
+    margin: 0 !important;
+    color: #ffe0eb !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+@media (max-width: 600px) {
+    #academy.academy-section,
+    .academy-section#academy {
+        min-height: 520px !important;
+        padding: 45px 16px !important;
+        background-position: center center !important;
+    }
+
+    #academy .academy-card {
+        padding: 20px 5px !important;
+        gap: 17px !important;
+    }
+
+    #academy .academy-card h2 {
+        font-size: clamp(32px, 9vw, 40px) !important;
+        line-height: 1.2 !important;
+    }
+
+    #academy .academy-description {
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+    }
+
+    #academy .academy-availability {
+        padding: 10px 12px !important;
+        font-size: 10px !important;
+    }
+
+    #academy .academy-button {
+        width: auto !important;
+        min-width: 0 !important;
+        padding: 13px 18px !important;
+        font-size: 12px !important;
+    }
 }
